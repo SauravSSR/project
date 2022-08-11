@@ -27,8 +27,3 @@
       - name: daemon-reload to pick up config changes
         ansible.builtin.systemd:
           daemon_reload: yes
-    
-      - name: Start jenkins
-        ansible.builtin.systemd:
-          name: jenkins
-          state: started
