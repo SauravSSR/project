@@ -20,4 +20,4 @@ Step5: Check on AWS console. VM is provisioned or not?
   - key_name: deployer1.key
 
 #EC2 instance_type
-  - IPv4: 
+  - IPv4: 52.207.237.74
