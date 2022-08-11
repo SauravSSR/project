@@ -1,5 +1,5 @@
 ---
-    - hosts: 52.207.237.74
+    - hosts: 44.202.44.193
       become: yes
       remote_user: ec2-user
       become_user: root
