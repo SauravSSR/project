@@ -1,7 +1,5 @@
 Step1: Check Terraform(TF).
 Step2: Go to AWS Cloud and create Access Key & ID.
-        ID: AKIA42BPLTEDEJU5KG6Q
-        Access Key: K9vK5y13AMApRJm+4K11UFtXyw4nk5+05c+Ir7CC
 Step3: Set up AWS profile (aws s3 ls).
 Step4: Write the TF script.
 Step5: Check on AWS console. VM is provisioned or not?
@@ -20,4 +18,4 @@ Step5: Check on AWS console. VM is provisioned or not?
   - key_name: deployer1.key
 
 #EC2 instance_type
-  - IPv4: 52.207.237.74
+  - IPv4: 44.202.44.193
