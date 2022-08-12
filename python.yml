@@ -1,6 +1,6 @@
 ---
 - name: Install python in target node with ansible
-  hosts: 44.202.44.193
+  hosts: myhost
   become: true
   gather_facts: no
   pre_tasks:

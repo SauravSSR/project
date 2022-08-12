@@ -1,6 +1,8 @@
 ---
-- hosts: myhost
-  name: Install Java
-    yum:
-      name: openjdk-11-jdk
-      state: present
+- name: Install java in target node with ansible
+  hosts: myhost
+  become: true
+  gather_facts: no
+  pre_tasks:
+  - name: install java
+    raw: yum -y install openjdk-11-jdk
