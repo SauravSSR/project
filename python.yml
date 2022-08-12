@@ -1,7 +1,14 @@
+---
 - hosts: myhost
-  remote_user: root
-  gather_facts: false
+  become: yes
+  remote_user: ec2-user
+  become_user: root
   tasks:
-
-    - name: Install Python
-      raw: yum -y install python
+  - name: yum update
+    yum:
+      name: '*'
+      state: latest
+  - name: installing python software
+    yum:
+      name: python
+      state: present
