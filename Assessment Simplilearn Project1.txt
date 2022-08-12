@@ -3,7 +3,12 @@ Step2: Go to AWS Cloud and create Access Key & ID.
 Step3: Set up AWS profile (aws s3 ls).
 Step4: Write the TF script.
 Step5: Check on AWS console. VM is provisioned or not?
+Step6: Write ansible-playbook for installing Java, Python & Jenkins.
+Step7: Run the playbooks.
+Step8: Ensure the installations were completed.
 
+      Project Finished
+      
 
 # Creation of VM in AWS reguires:
   - Security Group:
@@ -18,4 +23,4 @@ Step5: Check on AWS console. VM is provisioned or not?
   - key_name: deployer1.key
 
 #EC2 instance_type
-  - IPv4: 44.202.44.193
+  - IPv4: 54.235.8.214
