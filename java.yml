@@ -1,8 +1,14 @@
 ---
-- name: Install java in target node with ansible
-  hosts: myhost
-  become: true
-  gather_facts: no
-  pre_tasks:
-  - name: install java
-    raw: yum -y install openjdk-11-jdk
+- hosts: myhost
+  become: yes
+  remote_user: ec2-user
+  become_user: root
+  tasks:
+  - name: yum update
+    yum:
+      name: '*'
+      state: latest
+  - name: Install Java
+    yum:
+      name: openjdk-11-jdk
+      state: present

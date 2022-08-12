@@ -1,8 +1,7 @@
----
-- name: Install python in target node with ansible
-  hosts: myhost
-  become: true
-  gather_facts: no
-  pre_tasks:
-  - name: install python
-    raw: yum -y install python
+- hosts: myhost
+  remote_user: root
+  gather_facts: false
+  tasks:
+
+    - name: Install Python
+      raw: yum -y install python
