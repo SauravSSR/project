@@ -1,8 +1,6 @@
 ---
 - hosts: myhost
-  roles:
-          - role: geerlingguy.java
-            when: "ansible_os_family == 'Debian'"
-            java_packages:
-                    - default-jre
-...
+  name: Install Java
+    yum:
+      name: openjdk-11-jdk
+      state: present
